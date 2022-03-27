@@ -1,0 +1,42 @@
+ 
+.fanbox{
+    width: 360px;
+    height: 360px;
+    background-image: url('img/fanblade.png');
+    border-radius: 360px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* border: 2px dashed red; */
+    margin: 100px auto 10px auto;
+    animation-name: fan;
+    /* animation-duration:1s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+@keyframes fan{
+            0%{
+                transform:rotateZ(0deg);
+            }  
+            100%{
+                transform: rotateZ(359deg);
+            }  
+              }
+.p_buttons button:first-child{
+     
+    background-color: aquamarine;
+     border-radius: 10px;
+     padding: 20px 20px;
+     margin-right: 5px;
+
+}
+.p_buttons button{
+    
+    background-color:cornflowerblue;
+     border-radius: 10px;
+     padding: 20px 20px;
+     margin-right: 5px;
+}
+.p_buttons{
+    text-align: center;
+}
